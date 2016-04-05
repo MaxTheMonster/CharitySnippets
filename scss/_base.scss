@@ -10,7 +10,7 @@ div.heading {
   font-family: $heading-font;
   background: $main-color;
 
-  a {
+h1 {
     text-shadow: 1px 1px rgba(0,0,0,0.5);
     color: white;
     text-decoration: none;
@@ -58,6 +58,10 @@ div.heading {
           border-bottom: 1px solid rgba(0,0,0,0.5);
           margin: 2em;
         }
+      }
+
+      li:last-child {
+        border-bottom: 5px solid rgba(0,0,0,0.5);
       }
       .example {
         margin: 2em;
