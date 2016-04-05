@@ -4,10 +4,10 @@ nav {
   margin: 0;
   padding-bottom: 0.5em;
   font-family: sans-serif;
-  border-bottom: 1px solid black;
   background: #3498db;
 
   a {
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
     color: white;
     text-decoration: none;
     transition: 0.4s;
@@ -17,7 +17,6 @@ nav {
     }
   }
 }
-
 .container {
   margin: 2em;
   .mission {
