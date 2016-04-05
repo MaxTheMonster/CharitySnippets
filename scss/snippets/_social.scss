@@ -1,0 +1,75 @@
+.twitter {
+  color: white;
+  background: #55acee;
+  padding: 1em;
+  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+  transition: 0.2s;
+
+  i {
+    margin: 0 auto;
+  }
+  i:hover {
+    color: #55acee !important;
+  }
+}
+
+
+
+.twitter:hover {
+  color: #55acee;
+  background: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.facebook {
+  color: white;
+  background: #3B5998;
+  padding: 1em;
+  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+  transition: 0.2s;
+
+  i {
+    display: block;
+    margin: 0 auto;
+  }
+  i:hover {
+    color: #3B5998 !important;
+  }
+}
+
+.facebook:hover {
+  color: #3B5998;
+  background: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.instagram {
+  color: white;
+  background: #3f729b;
+  padding: 1em;
+  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+  transition: 0.2s;
+
+  i {
+    display: block;
+    margin: 0 auto;
+  }
+  i:hover {
+    color: #3f729b !important;
+  }
+}
+
+.instagram:hover {
+  color: #3f729b;
+  background: white;
+  transition: 0.1s;
+  cursor: pointer;
+}

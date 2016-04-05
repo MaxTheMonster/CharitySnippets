@@ -33,6 +33,7 @@ gulp.task('img', function() {
 
 gulp.task('default',function() {
     gulp.watch('scss/*.scss', ['css']).on('change', browserSync.reload);
+    gulp.watch('scss/snippets/*.scss', ['css']).on('change', browserSync.reload);
     gulp.watch('js/*.js', ['js']).on('change', browserSync.reload);
     gulp.watch('*.php').on('change', browserSync.reload);
     browserSync.init({

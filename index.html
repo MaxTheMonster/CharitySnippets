@@ -13,78 +13,489 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
 </head>
 <body>
-  <nav>
+  <div class="heading">
     <a href="#"><h1>Charity Snippets</h1></a>
-
-  </nav>
+  </div>
   <div class="container">
     <div class="mission">
-      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, molestias quos amet nisi, repellat quis adipisci animi optio non, sint soluta ratione nemo, ducimus consequatur? Iusto facere voluptate voluptas voluptatum.</span><span>Ea, sunt? Maxime nostrum cupiditate ex molestias temporibus itaque nemo quam eaque consequatur iusto tempora perspiciatis, dolorem laborum quasi corporis velit id explicabo eveniet possimus soluta. Id in minus doloremque.</span></p>
+      <p>Our mission has been to empower small charities with one of the most relevant components to a successful business: a website. We have provided components - snippets - of code that can be used anywhere in a website, eliminating the costs related to building a website and not only make your website useful, but beautiful in every way.</p>
     </div>
     <div class="snippets">
-      <div class="buttons collection">
+      <div class="navigation-snippets">
+        <ul>
+          <a href="#buttons"><li>Buttons</li></a>
+          <a href="#search-bars"><li>Search Bars</li></a>
+          <a href="#navigation"><li>Navigation</li></a>
+          <a href="#links"><li>Links/Headings</li></a>
+          <a href="#images"><li>Images</li></a>
+          <a href="#social"><li>Social Media</li></a>
+          <a href="#donate"><li>Donate Buttons</li></a>
+          <a href="#drop-down"><li>Drop Down</li></a>
+          <a href="#colour-picker"><li>Colour Picker</li></a>
+          <a href="#slider"><li>Slider</li></a>
+          <a href="#video"><li>Video</li></a>
+          <a href="#audio"><li>Audio</li></a>
+          <a href="#html-starter"><li>HTML Starter</li></a>
+        </ul>
+      </div>
+
+      <!-- Buttons -->
+      <div id="buttons" class="collection">
         <h1>Buttons</h1>
         <p>Buttons are an essential part of every website, from taking user to the next page, to purchasing an item. Here are a few basic buttons that you may need to include in your website.</p>
-
-        <div class="change-class">
-          <input type="text" placeholder="Class">
-        </div>
 
         <ol>
           <li>
             <div class="example">
-              <input type="button" name="button-1" value="Button" class="button-1">
+              <input type="button" name="button-1" value="Button 1" class="button-1">
               </br>
               <h4>HTML
                 <i data-clipboard-target="#copy-button-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
 
               <pre><code id="copy-button-1-html" class="language-markup">
-                &lt;input type="button" name="button-1" value="Button" class="button-1">
+  &lt;input type="button" name="button-1" value="Button 1" class="button-1">
               </code></pre>
 
               <h4>CSS <i data-clipboard-target="#copy-button-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
               <pre><code id="copy-button-2-html" class="copy language-css">
-                .button-1 {
-                  background-color: #4CAF50;
-                  border: none;
-                  color: white;
-                  padding: 1em;
-                  text-align: center;
-                  text-decoration: none;
-                  display: inline-block;
-                  font-size: 16px;
-                }
+  .button-1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: 0;
+  }
               </code></pre>
             </div>
           </li>
           <li>
             <div class="example">
-              <input type="button" name="button-2" value="Button" class="button-2">
+              <input type="button" name="button-2" value="Button 2" class="button-2">
 
               <h4>HTML
                 <i data-clipboard-target="#copy-button-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
 
               <pre><code id="copy-button-1-html" class="language-markup">
-                &lt;input type="button" name="button-1" value="Button" class="<div class="class"></div>">
+  &lt;input type="button" name="button-2" value="Button 2" class="button-2">
               </code></pre>
 
               <h4>CSS <i data-clipboard-target="#copy-button-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
               <pre><code id="copy-button-2-html" class="copy language-css">
-                . {
-                  background-color: #4CAF50;
-                  border: none;
-                  color: white;
-                  padding: 1em;
-                  text-align: center;
-                  text-decoration: none;
-                  display: inline-block;
-                  font-size: 16px;
-                }
+  .button-2 {
+    background-color: #0040FF;
+    border: none;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid # 002699;
+    display: inline-block;
+    font-size: 16px;
+    outline: 0;
+  }
+
+  .button-2:hover {
+    background: #002699;
+  }
               </code></pre>
             </div>
           </li>
         </ol>
       </div>
+      <!-- Search Bars -->
+      <div id="search-bars" class="collection">
+        <h1>Search Bars</h1>
+        <p>A good search bar can mean the difference between if a user gets to their page or not and whether you get the donation or not. These are essential to an easily navigable website as they are arguably superior to other forms of navigation such as a drop down as they provide the user a nearly infinite option set of what they can look for.</p>
+
+        <ol>
+          <li>
+            <div class="example">
+              <input type="text" name="search-1" placeholder="Search..." class="search-1">
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-search-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-search-1-html" class="language-markup">
+  &lt;input type="text" name="search-1" placeholder="Search..." class="search-1">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-search-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-search-2-html" class="copy language-css">
+  .search-1 {
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 30%;
+    font-size: 2rem;
+    padding: 0.4em;
+  }
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <input type="text" name="search-2" placeholder="Search..." class="search-2">
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-search-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-search-1-html" class="language-markup">
+  &lt;input type="text" name="search-2" placeholder="Search..." class="search-2">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-search-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-search-2-html" class="copy language-css">
+  .search-2 {
+    outline: 0;
+    font-size: 1.66rem;
+    padding: 0.2em;
+    border-bottom: 5px solid rgba(0,0,0,0.5);
+    transition: 0.4s;
+  }
+  .search-2:focus {
+    border-bottom: 5px solid #d35400;
+    transition: 0.2s;
+  }
+              </code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Navigation -->
+      <div id="navigation" class="collection">
+        <h1>Navigation</h1>
+        <p>Navigation is key to any website as it not only aids the user, but guides the user through your website - flowing from page to page. Without navigation, many websites would be rendered useless.</p>
+
+        <ol>
+          <li>
+            <div class="example">
+              <nav class="navigation-1">
+                <ul>
+                  <a href="#">
+                    <li>Shop</li>
+                  </a>
+                  <a href="#">
+                    <li>Donate</li>
+                  </a>
+                  <a href="#">
+                    <li>Volunteer</li>
+                  </a>
+                  <a href="#">
+                    <li>Contact</li>
+                  </a>
+                  <a href="#">
+                    <li>The Team</li>
+                  </a>
+                </ul>
+              </nav>
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-nav-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-nav-1-html" class="language-markup">
+  &lt;nav class="navigation-1">
+    &lt;ul>
+      &lt;a href="#">
+        &lt;li>Shop&lt;/li>
+      &lt;/a>
+      &lt;a href="#">
+        &lt;li>Donate&lt;/li>
+      &lt;/a>
+      &lt;a href="#">
+        &lt;li>Volunteer&lt;/li>
+      &lt;/a>
+      &lt;a href="#">
+        &lt;li>Contact&lt;/li>
+      &lt;/a>
+      &lt;a href="#">
+        &lt;li>The Team&lt;/li>
+      &lt;/a>
+    &lt;/ul>
+  &lt;/nav>
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-nav-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-nav-2-html" class="copy language-css">
+  .navigation-1 {
+    font-family: sans-serif;
+
+    li {
+      list-style-type: none;
+      color: black;
+      font-size: 1rem;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      float: right;
+    }
+  }
+
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <input type="text" name="search-2" placeholder="Search..." class="search-2">
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-nav-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-nav-1-html" class="language-markup">
+  &lt;input type="text" name="search-2" placeholder="Search..." class="search-2">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-nav-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-nav-2-html" class="copy language-css">
+  .search-2 {
+    outline: 0;
+    font-size: 1.66rem;
+    padding: 0.2em;
+    border-bottom: 5px solid rgba(0,0,0,0.5);
+    transition: 0.4s;
+  }
+  .search-2:focus {
+    border-bottom: 5px solid #d35400;
+    transition: 0.2s;
+  }
+              </code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- Links/Headings -->
+      <div id="links" class="collection">
+        <h1>Links/Headings</h1>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae, repellendus ipsam laudantium ea nostrum fugit vel. Et consectetur harum, delectus quos aliquid fugiat possimus corporis accusamus. Laudantium, earum quidem.</span><span>Sunt quas repellendus minus eligendi iure deleniti molestiae ab nobis non eos. Quas, accusantium, sint! Accusantium sed, vero sunt nesciunt nihil ullam voluptates beatae dolore. Ratione molestiae id reiciendis atque.</span></p>
+
+        <ol>
+          <li>
+            <div class="example">
+              <div class="link-1">Check out our new <a class="link-1" href="#">products</a>!</div>
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-links-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-links-1-html" class="language-markup">
+  Check out our new &lt;a class="link-1" href="#">products&lt;/a>!
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-links-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-links-2-html" class="copy language-css">
+  .link-1 {
+    font-family: sans-serif;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <h1 class="heading-1">What we do.</h1>
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-links-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-links-1-html" class="language-markup">
+  &lt;h1 class="heading-1">What we do.</h1>
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-links-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-links-2-html" class="copy language-css">
+  .heading-1 {
+    color: black;
+    font-family: sans-serif;
+  }
+              </code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+
+
+      <!-- Images -->
+      <div id="images" class="collection">
+        <h1>Images</h1>
+        <p>A famous poet once said "A picture can tell a thousand words". This is so true and by using images on your website, you will be able to tell 1001 to your users. </p>
+
+        <ol>
+          <li>
+            <div class="example">
+              <img class="image-1" src="img/girl.jpg" alt="Girl stretching out her arm.">
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-images-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-images-1-html" class="language-markup">
+  &lt;img class="image-1" src="img/girl.jpg" alt="Girl stretching out her arm.">
+
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-images-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-images-2-html" class="copy language-css">
+  .image-1 {
+    border: 1px solid black;
+  }
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <img class="image-2" src="img/girl.jpg" alt="Girl stretching out her arm.">
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-images-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-images-1-html" class="language-markup">
+  &lt;img class="image-2" src="img/girl.jpg" alt="Girl stretching out her arm.">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-images-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-images-2-html" class="copy language-css">
+  .image-2 {
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+  }
+              </code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Social Media -->
+      <div id="social" class="collection">
+        <h1>Social Media</h1>
+        <p>A famous poet once said "A picture can tell a thousand words". This is so true and by using images on your website, you will be able to tell 1001 to your users. </p>
+
+        <h5>DISCLAIMER: For the icons to work, you must link the <a href="http://fontawesome.io">FontAwesome</a> css. Simple paste this into your HEAD tag. &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></h5>
+        <ol>
+          <li>
+            <div class="example">
+              <div class="twitter"><i class="fa fa-twitter"></i></div>
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-links-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-links-1-html" class="language-markup">
+    &lt;div class="twitter">&lt;i class="fa fa-twitter">&lt;/i>&lt;/div>
+
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-links-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-links-2-html" class="copy language-css">
+    .twitter {
+      color: white;
+      background: #55acee;
+      padding: 1em;
+      border-radius: 100%;
+      width: 1em;
+      height: 1em;
+      transition: 0.2s;
+    }
+
+    .twitter i {
+      margin: 0 auto;
+    }
+
+    .twitter:hover {
+      color: #55acee;
+      background: white;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <div class="facebook"><i class="fa fa-facebook"></i></div>
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-links-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-links-1-html" class="language-markup">
+    &lt;img class="image-2" src="img/girl.jpg" alt="Girl stretching out her arm.">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-links-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-links-2-html" class="copy language-css">
+    .facebook {
+      color: white;
+      background: #3B5998;
+      padding: 1em;
+      border-radius: 100%;
+      width: 1em;
+      height: 1em;
+      transition: 0.2s;
+    }
+
+    i {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .facebook:hover {
+      color: #3B5998;
+      background: white;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <div class="instagram"><i class="fa fa-instagram"></i></div>
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-links-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-links-1-html" class="language-markup">
+    &lt;div class="instagram">&lt;i class="fa fa-instagram">&lt;/i>&lt;/div>
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-links-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-links-2-html" class="copy language-css">
+    .instagram {
+      color: white;
+      background: #3f729b;
+      padding: 1em;
+      border-radius: 100%;
+      width: 1em;
+      height: 1em;
+      transition: 0.2s;
+    }
+
+    i {
+      display: block;
+      margin: 0 auto;
+    }
+    .instagram:hover {
+      color: #3f729b;
+      background: white;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+
+              </code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+
     </div>
   </div>
   <script>
@@ -92,9 +503,6 @@
     new Clipboard('.copy');
   })();
 
-  var text = document.createTextNode('class');
-  var child = document.getElementByClassName('class');
-  child.parentNode.insertBefore(text, child);
   </script>
 </body>
 </html>

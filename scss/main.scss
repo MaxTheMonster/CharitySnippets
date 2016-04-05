@@ -1,5 +1,13 @@
-@import "base", "media", "snippets/buttons";
+@import "base", "media";
+@import "snippets/buttons",
+        "snippets/search",
+        "snippets/navigation",
+        "snippets/links",
+        "snippets/images",
+        "snippets/social";
 
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +15,4 @@
 
 input:focus, button:focus {
   outline: 0;
-}
-
-.class {
-  z-index: 2;
-  background-color: red;
 }
