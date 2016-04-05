@@ -8,7 +8,9 @@
   <title>Charity Snippets</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <script src="handlebars/code.js"></script>
+  <link href="css/prism.css" rel="stylesheet" />
+  <script src="js/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
 </head>
 <body>
   <nav>
@@ -21,21 +23,78 @@
     </div>
     <div class="snippets">
       <div class="buttons collection">
+        <h1>Buttons</h1>
+        <p>Buttons are an essential part of every website, from taking user to the next page, to purchasing an item. Here are a few basic buttons that you may need to include in your website.</p>
+
+        <div class="change-class">
+          <input type="text" placeholder="Class">
+        </div>
+
         <ol>
           <li>
             <div class="example">
               <input type="button" name="button-1" value="Button" class="button-1">
-            
+              </br>
+              <h4>HTML
+                <i data-clipboard-target="#copy-button-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-button-1-html" class="language-markup">
+                &lt;input type="button" name="button-1" value="Button" class="button-1">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-button-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-button-2-html" class="copy language-css">
+                .button-1 {
+                  background-color: #4CAF50;
+                  border: none;
+                  color: white;
+                  padding: 1em;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+              </code></pre>
             </div>
           </li>
           <li>
             <div class="example">
               <input type="button" name="button-2" value="Button" class="button-2">
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-button-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-button-1-html" class="language-markup">
+                &lt;input type="button" name="button-1" value="Button" class="<div class="class"></div>">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-button-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-button-2-html" class="copy language-css">
+                . {
+                  background-color: #4CAF50;
+                  border: none;
+                  color: white;
+                  padding: 1em;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+              </code></pre>
             </div>
           </li>
         </ol>
       </div>
     </div>
   </div>
+  <script>
+  (function(){
+    new Clipboard('.copy');
+  })();
+
+  var text = document.createTextNode('class');
+  var child = document.getElementByClassName('class');
+  child.parentNode.insertBefore(text, child);
+  </script>
 </body>
 </html>
