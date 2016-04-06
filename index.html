@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link href="css/prism.css" rel="stylesheet" />
-  <script src="js/prism.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
+
 </head>
 <body>
   <div class="heading">
@@ -31,9 +30,9 @@
           <a href="#social"><li>Social Media</li></a>
           <a href="#donate"><li>Donate Buttons</li></a>
           <a href="#html-starter"><li>HTML Starter</li></a>
-          <a href="#video"><li>Video</li></a>
           <a href="#audio"><li>Audio</li></a>
-          <a href="#announcment"><li>Announcement</li></a>
+          <a href="#video"><li>Video</li></a>
+          <a href="#announcement"><li>Announcements</li></a>
         </ul>
       </div>
 
@@ -77,14 +76,14 @@
               <input type="button" name="button-2" value="Button 2" class="button-2">
 
               <h4>HTML
-                <i data-clipboard-target="#copy-button-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+                <i data-clipboard-target="#copy-button-3-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
 
-              <pre><code id="copy-button-1-html" class="language-markup">
+              <pre><code id="copy-button-3-html" class="language-markup">
   &lt;input type="button" name="button-2" value="Button 2" class="button-2">
               </code></pre>
 
-              <h4>CSS <i data-clipboard-target="#copy-button-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
-              <pre><code id="copy-button-2-html" class="copy language-css">
+              <h4>CSS <i data-clipboard-target="#copy-button-4-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-button-4-html" class="copy language-css">
   .button-2 {
     background-color: #0040FF;
     border: none;
@@ -108,6 +107,7 @@
           </li>
         </ol>
       </div>
+
       <!-- Search Bars -->
       <div id="search-bars" class="collection">
         <h1>Search Bars</h1>
@@ -143,14 +143,14 @@
               <input type="text" name="search-2" placeholder="Search..." class="search-2">
 
               <h4>HTML
-                <i data-clipboard-target="#copy-search-1-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+                <i data-clipboard-target="#copy-search-3-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
 
-              <pre><code id="copy-search-1-html" class="language-markup">
+              <pre><code id="copy-search-3-html" class="language-markup">
   &lt;input type="text" name="search-2" placeholder="Search..." class="search-2">
               </code></pre>
 
-              <h4>CSS <i data-clipboard-target="#copy-search-2-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
-              <pre><code id="copy-search-2-html" class="copy language-css">
+              <h4>CSS <i data-clipboard-target="#copy-search-4-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-search-4-html" class="copy language-css">
   .search-2 {
     outline: 0;
     font-size: 1.66rem;
@@ -161,6 +161,28 @@
   .search-2:focus {
     border-bottom: 5px solid #d35400;
     transition: 0.2s;
+  }
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            <div class="example">
+              <input type="text" name="search-3" placeholder="Search..." class="search-3">
+
+              <h4>HTML
+                <i data-clipboard-target="#copy-search-5-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4>
+
+              <pre><code id="copy-search-5-html" class="language-markup">
+  &lt;input type="text" name="search-3" placeholder="Search..." class="search-3">
+              </code></pre>
+
+              <h4>CSS <i data-clipboard-target="#copy-search-6-html"  class="copy fa fa-clipboard" alt="Copy to clipboard"></i></h4></h4>
+              <pre><code id="copy-search-6-html" class="copy language-css">
+  .search-3 {
+    font-family: sans-serif;
+    padding: 0.5em;
+    outline: 0;
+    font-size: 2rem;
   }
               </code></pre>
             </div>
@@ -328,7 +350,7 @@
       <!-- Images -->
       <div id="images" class="collection">
         <h1>Images</h1>
-        <p>A famous poet once said "A picture can tell a thousand words". This is so true and by using images on your website, you will be able to communicate your idea quicker and pursuade your users over.</p>
+        <p>As Frederick R. Barnard once said "a picture paints a thousand words". This is so true and by using images on your website, you will be able to communicate your ideas quicker and persuade your users successfully.</p>
 
         <ol>
           <li>
@@ -533,6 +555,7 @@
               </code></pre>
             </div>
           </li>
+
           <li>
             <div class="example">
               <input type="button" value="Donate" class="donate-2">
@@ -675,7 +698,7 @@
       <!-- Announcement -->
       <div id="announcement" class="collection">
         <h1>Announcement</h1>
-        <p>When you need to communicate something to your users, site-wide, this is the best option with eye-grabbing colours to draw their attention to what they say.</p>
+        <p>When you need to communicate something to your users, site-wide, this is the best option with eye-grabbing colours to draw their attention to what you want to say.</p>
 
         <ol>
           <li>
@@ -742,6 +765,8 @@
       </div>
     </div>
   </div>
+  <script src="js/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
   <script>
   (function(){
     new Clipboard('.copy');
